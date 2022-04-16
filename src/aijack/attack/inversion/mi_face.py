@@ -85,7 +85,8 @@ class MI_FACE(BaseAttacker):
             pred = pred.softmax(dim=1) if self.apply_softmax else pred
             target_pred = pred[:, [self.target_label]]
             c = 1 - target_pred + self.auxterm_func(x)
-            c.backward()
+            #c.backward()
+            c.mean().backward()
             grad = x.grad
 
             if c.item() < best_score:
