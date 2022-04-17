@@ -1,4 +1,3 @@
-%matplotlibe inline
 import torch
 from matplotlib import pyplot as plt
 
@@ -109,6 +108,7 @@ class MI_FACE(BaseAttacker):
         return best_img, log
 
     def _show_img(self, x):
+        plt.ion()
         if self.log_show_img:
             if self.input_shape[1] == 1:
                 plt.imshow(
