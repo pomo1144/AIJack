@@ -1,5 +1,5 @@
-import torch
 %matplotlibe inline
+import torch
 from matplotlib import pyplot as plt
 
 from ..base_attack import BaseAttacker
