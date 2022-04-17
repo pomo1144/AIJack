@@ -43,7 +43,7 @@ class BaseFLKnowledgeDistillationAPI:
 
             running_loss = 0.0
             for data in trainloader:
-                _, x, y = data
+                x, y = data
                 x = x.to(self.device)
                 y = y.to(self.device).to(torch.int64)
 
