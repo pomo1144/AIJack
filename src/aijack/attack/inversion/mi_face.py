@@ -1,4 +1,5 @@
 import torch
+%matplotlibe inline
 from matplotlib import pyplot as plt
 
 from ..base_attack import BaseAttacker
