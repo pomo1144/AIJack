@@ -13,6 +13,7 @@ class BaseFLKnowledgeDistillationAPI:
         clients,
         public_dataloader,
         local_dataloaders,
+        client_optimizers,
         validation_dataloader,
         criterion,
         num_communication,
@@ -22,6 +23,7 @@ class BaseFLKnowledgeDistillationAPI:
         self.clients = clients
         self.public_dataloader = public_dataloader
         self.local_dataloaders = local_dataloaders
+        self.client_optimizers = client_optimizers
         self.validation_dataloader = validation_dataloader
         self.criterion = criterion
         self.num_communication = num_communication
